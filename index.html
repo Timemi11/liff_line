@@ -31,6 +31,7 @@
   <p><a href="https://timemi11.github.io/liff_line/path/?param=9">Link to Path</a></p>
 
   <button id="btnMsg" onclick="sendMsg()">Send Message</button>
+  <button id="btnFlexMsg" onclick="sendFlexMsg()">Send Message</button>
   <button id="btnShare" onclick="shareMsg()">Share Target Picker</button>
   <button onclick="openWindow()">Open Window</button>
   <button id="btnScanCode" onclick="scanCode()">Scan Code</button>
@@ -101,6 +102,86 @@
             "type": "sticker",
             "stickerId": 1,
             "packageId": 1
+          }
+        ])
+        alert("Message sent")
+      }
+    }
+    async function sendFlexMsg() {
+      if (liff.getContext().type !== "none") {
+        await liff.sendMessages([
+          {
+            "type": "bubble",
+            "header": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Ex10",
+                  "color": "#ffffff",
+                  "weight": "bold"
+                }
+              ],
+              "backgroundColor": "#00B900"
+            },
+            "hero": {
+              "type": "image",
+              "url": "https://developers.line.biz/media/messaging-api/using-flex-message-simulator/mary.png"
+            },
+            "body": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Chatchawan Aromtip",
+                  "align": "center",
+                  "weight": "bold"
+                },
+                {
+                  "type": "text",
+                  "text": "Freshy of Ex10",
+                  "weight": "regular",
+                  "align": "center"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "Visit our website",
+                        "uri": "http://linecorp.com/"
+                      },
+                      "style": "primary"
+                    },
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "Register with us",
+                        "uri": "http://linecorp.com/"
+                      },
+                      "style": "secondary"
+                    },
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "Call us now",
+                        "uri": "tel:+66xxxxxxxx"
+                      },
+                      "style": "secondary"
+                    }
+                  ],
+                  "spacing": "md"
+                }
+              ],
+              "backgroundColor": "#eeeeee"
+            }
           }
         ])
         alert("Message sent")
