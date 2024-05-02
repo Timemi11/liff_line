@@ -100,7 +100,7 @@
         await liff.sendMessages([
           {
             "type": "sticker",
-            "stickerId": 1,
+            "stickerId": 12,
             "packageId": 1
           }
         ])
@@ -216,9 +216,6 @@
       if (liff.isInClient()) {
         document.getElementById("btnLogOut").style.display = "none"
       } else {
-        document.getElementById("btnMsg").style.display = "none"
-        document.getElementById("btnScanCode").style.display = "none"
-        document.getElementById("btnClose").style.display = "none"
       }
     }
 
