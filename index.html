@@ -100,7 +100,7 @@
         await liff.sendMessages([
           {
             "type": "sticker",
-            "stickerId": 12,
+            "stickerId": 1,
             "packageId": 1
           }
         ])
@@ -111,106 +111,76 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
           {
-            "type": "flex",
-            "altText": "This is a Flex Message",
-            "contents": {
-              "type": "bubble",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "Flex Message Corp",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "backgroundColor": "#00B900"
-              },
-              "hero": {
-                "type": "image",
-                "url": "https://scontent.fbkk12-5.fna.fbcdn.net/v/t39.30808-6/294105628_5334907676589941_7193552205340986144_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=onZ0K2PtBXIQ7kNvgFL6jDz&_nc_ht=scontent.fbkk12-5.fna&oh=00_AfCtbOXblCnB2Y2_z-Wmgevn_9Tee7RnPtnVFYj9CYfHkg&oe=6638DA28",
-                "size": "xl"
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "bubble",
-                    "header": {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Flex Message Corp",
-                          "color": "#FFFFFF"
-                        }
-                      ],
-                      "backgroundColor": "#00B900"
+            "type": "bubble",
+            "header": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Ex10",
+                  "color": "#ffffff",
+                  "weight": "bold"
+                }
+              ],
+              "backgroundColor": "#00B900"
+            },
+            "hero": {
+              "type": "image",
+              "url": "https://ichef.bbci.co.uk/news/976/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg"
+            },
+            "body": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Chatchawan Aromtip",
+                  "align": "center",
+                  "weight": "bold"
+                },
+                {
+                  "type": "text",
+                  "text": "Freshy of Ex10",
+                  "weight": "regular",
+                  "align": "center"
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "Visit our website",
+                        "uri": "http://linecorp.com/"
+                      },
+                      "style": "primary"
                     },
-                    "hero": {
-                      "type": "image",
-                      "url": "https://scontent.fbkk12-5.fna.fbcdn.net/v/t39.30808-6/294105628_5334907676589941_7193552205340986144_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=onZ0K2PtBXIQ7kNvgFL6jDz&_nc_ht=scontent.fbkk12-5.fna&oh=00_AfCtbOXblCnB2Y2_z-Wmgevn_9Tee7RnPtnVFYj9CYfHkg&oe=6638DA28",
-                      "size": "xl"
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "Register with us",
+                        "uri": "http://linecorp.com/"
+                      },
+                      "style": "secondary"
                     },
-                    "body": {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Phunsup Suwannasophon",
-                          "align": "center",
-                          "weight": "bold",
-                          "size": "lg"
-                        },
-                        {
-                          "type": "text",
-                          "text": "Silpakorn University",
-                          "align": "center"
-                        },
-                        {
-                          "type": "box",
-                          "layout": "vertical",
-                          "contents": [
-                            {
-                              "type": "button",
-                              "action": {
-                                "type": "uri",
-                                "label": "Visit our website",
-                                "uri": "https://github.com/timemi11"
-                              },
-                              "style": "primary",
-                              "margin": "md"
-                            },
-                            {
-                              "type": "button",
-                              "action": {
-                                "type": "uri",
-                                "label": "Register with us",
-                                "uri": "https://line.me/ti/p/9FwmSkxb4X"
-                              },
-                              "style": "secondary",
-                              "margin": "md"
-                            },
-                            {
-                              "type": "button",
-                              "action": {
-                                "type": "uri",
-                                "label": "Call Us Now",
-                                "uri": "tel:+66928899534"
-                              },
-                              "margin": "md"
-                            }
-                          ]
-                        }
-                      ]
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "Call us now",
+                        "uri": "tel:+66xxxxxxxx"
+                      },
+                      "style": "secondary"
                     }
-                  }
-                ]
-              }
+                  ],
+                  "spacing": "md"
+                }
+              ],
+              "backgroundColor": "#eeeeee"
             }
           }
         ])
