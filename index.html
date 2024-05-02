@@ -115,20 +115,77 @@
             "altText": "This is a Flex Message",
             "contents": {
               "type": "bubble",
-              "body": {
+              "header": {
                 "type": "box",
-                "layout": "horizontal",
+                "layout": "vertical",
                 "contents": [
                   {
                     "type": "text",
-                    "text": "Hello,"
+                    "text": "Ex10",
+                    "color": "#ffffff",
+                    "weight": "bold"
+                  }
+                ],
+                "backgroundColor": "#00B900"
+              },
+              "hero": {
+                "type": "image",
+                "url": "https://ichef.bbci.co.uk/news/976/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Chatchawan Aromtip",
+                    "align": "center",
+                    "weight": "bold"
                   },
                   {
                     "type": "text",
-                    "text": "World!"
+                    "text": "Student",
+                    "weight": "regular",
+                    "align": "center"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "Visit our website",
+                          "uri": "http://linecorp.com/"
+                        },
+                        "style": "primary"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "Register with us",
+                          "uri": "http://linecorp.com/"
+                        },
+                        "style": "secondary"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "uri",
+                          "label": "Call us now",
+                          "uri": "tel:+66xxxxxxxx"
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "spacing": "md"
                   }
-                ]
+                ],
+                "backgroundColor": "#eeeeee"
               }
+
             }
           }
         ])
